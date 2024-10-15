@@ -22,7 +22,7 @@ SRC		=	main.cpp
 
 OBJS	=	$(SRC:.cpp=.o)
 
-.PHONY:		all clean fclean re bonus
+.PHONY:		all clean fclean re
 
 all:		$(NAME)
 
