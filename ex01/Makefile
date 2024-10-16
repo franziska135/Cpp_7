@@ -1,19 +1,7 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: fmarggra <fmarggra@student.42vienna.c      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/20 11:52:51 by fmarggra          #+#    #+#              #
-#    Updated: 2024/09/03 16:04:31 by fmarggra         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME		=	iter
 INC			= 	iter.hpp
 CXX			=	c++
-CXXFLAGS	=	-Wall -Wextra -Werror -g -std=c++98
+CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 AR		=	ar rc
 RM		=	rm -f

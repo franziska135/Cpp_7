@@ -4,14 +4,12 @@ template <typename T>
 Array<T>::Array(void) {
     _array = NULL;
     _size = 0;
-    std::cout   << "Default constructor" << std::endl;
 }
 
 template <typename T>
 Array<T>::Array(unsigned int n) {
     _array = new T[n];
     _size = n;
-    std::cout   << "Parametrized constructor" << std::endl;
 }
 
 template <typename T>
@@ -23,7 +21,6 @@ Array<T>::Array(const Array<T> &other) {
         for (unsigned int i = 0; i < _size; i++)
             _array[i] = other._array[i];
     }
-    std::cout   << "Copy constructor" << std::endl;
 }
 
 template <typename T>
@@ -33,11 +30,10 @@ Array<T>& Array<T>::operator=(const Array<T>& other) {
             delete[] _array;
         if (other._size > 0)
         _array = new T[other._size];
-        for (int i = 0; i < _size; i++)
+        for (unsigned int i = 0; i < _size; i++)
             _array[i] = other._array[i];
         _size = other._size;
     }
-    std::cout   << "Assignment constructor" << std::endl;
     return *this;
 }
 
@@ -47,7 +43,7 @@ Array<T>::~Array(void) {
 }
 
 template <typename T>
-int Array<T>::size() const {
+unsigned int Array<T>::size() const {
     return _size;
 }
 

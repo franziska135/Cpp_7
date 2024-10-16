@@ -16,7 +16,7 @@ class Array {
         ~Array();
 
         Array<T>&       operator=(const Array<T> &other);
-        int             size() const;
+        unsigned int             size() const;
         T&              operator[](unsigned int index);
 
 };
