@@ -5,10 +5,10 @@ int main(void) {
     int length = 4;
 
     std::cout << "Int array printing:\t";
-    iter(array, length, print);
+    iter(array, length, print<int>);
     std::cout << std::endl;
 
     std::cout << "\nInt array tripling:\t";
-    iter(array, length, triple);
+    iter(array, length, triple<int>);
     std::cout << std::endl;
 }

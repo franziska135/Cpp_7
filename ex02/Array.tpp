@@ -53,3 +53,10 @@ T& Array<T>::operator[](unsigned int i) {
         throw std::out_of_range("ERROR: Index exceeds bounds");
     return _array[i];
 }
+
+template <typename T>
+const T& Array<T>::operator[](unsigned int i) const {
+    if (i >= _size)
+        throw std::out_of_range("ERROR: Index exceeds bounds");
+    return _array[i];
+}
